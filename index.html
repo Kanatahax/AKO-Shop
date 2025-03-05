@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKO Shop</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: url('bg.jpeg') no-repeat center center;
+            background-size: cover;
+        }
+        @keyframes backgroundScroll {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 60%; }
+        }
+        .container {
+            padding: 50px;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .scroll-wrapper {
+            overflow-x: hidden;
+            padding: 10px 0;
+        }
+        .scroll-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            min-width: 200px;
+            flex-shrink: 0;
+        }
+        .btn {
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #feb47b, #ff7e5f);
+        }
+        .text-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Welcome to AKO Shop!</h1>
+        <div class="text-box">
+            <p>このサイトではAKO Shopについてのお知らせや、売っているものを一部見ることができます。</p>
+        </div>
+        <div class="scroll-wrapper">
+            <div class="scroll-container">
+                <div class="card">
+                    <h2>予備装備1 32ダイヤ</h2>
+                    <img src="1.png" alt="予備装備1" style="width:100%;">
+                    <p>戦争時死んでしまっても、この装備を使えば、再び戦場に立つことができます。</p>
+                </div>
+                <div class="card">
+                    <h2>予備装備2 80ダイヤ</h2>
+                    <img src="2.png" alt="予備装備2" style="width:100%;">
+                    <p>三回分の予備装備が入っています、戦争時何度も戦場に立つことができます。</p>
+                </div>
+                <div class="card">
+                    <h2>予備欄</h2>
+                    <img src="画像.png" alt="予備欄" style="width:100%;">
+                    <p>予備欄</p>
+                </div>
+                <div class="card">
+                    <h2>予備欄</h2>
+                    <img src="画像.png" alt="予備欄" style="width:100%;">
+                    <p>画像</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-box">
+            <h2>購入等はこちらから</h2>
+            <p>Discordサーバーですべての商品を見れます</p>
+            <a href="https://discord.gg/sZTzrh5XK4" class="btn">Discord</a>
+        </div>
+        <div class="text-box">
+            <h2>ショップについて</h2>
+            <p>一切の転売、譲渡（本など）を禁止します</p>
+        </div>
+    </div>
+</body>
+</html>
